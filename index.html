@@ -29,6 +29,15 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
   </style>
 </head>
+  <script>
+  if (window.location.search) {
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.hash
+    );
+  }
+</script>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#home"><span class="symbol" aria-hidden="true">&lt;/&gt;</span><span>Massimiliano Rocco<small>Independent developer</small></span></a><nav class="navlinks" aria-label="Navigazione principale"><a href="#home">Home</a><a href="#app">App</a><a href="#contatti">Contatti</a></nav></div></header>
 <main>
